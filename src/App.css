@@ -1,3 +1,45 @@
+#root {
+  margin: 0 100px;
+}
+
+Header {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+Header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 170px;
+}
 h2 {
   font-size: 20px;
+}
+
+.infoRestau {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 750px;
+  gap: 50px;
+}
+
+.infoRestau h2 {
+  font-size: 30px;
+}
+.infoRestau p {
+  color: grey;
+  font-size: 20px;
+}
+.Img-Restau {
+  height: 200px;
+  width: 350px;
+}
+.banniere-restau {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
 }

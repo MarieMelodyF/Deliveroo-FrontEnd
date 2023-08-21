@@ -2,35 +2,36 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Header from "./assets/components/Header";
+import InfoRestau from "./assets/components/InfosRestau";
+import Meals from "./assets/components/Meals";
 
 function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  // console.log(data.categories);
 
-  <Header
-    data={data}
-    setData={setData}
-    isLoading={isLoading}
-    setIsLoading={setIsLoading}
-  />;
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await axios.get(
-  //       "https://site--deliveroo-backend--r2txk865xjj8.code.run/"
-  //     );
-  //     // console.log(response.data);
-  //     setData(response.data);
-  //     setIsLoading(false);
-  //   };
+  return (
+    <>
+      <Header />
+      <InfoRestau
+        data={data}
+        setData={setData}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+      />
+      {/* // data={data}
+      // setData={setData}
+      // isLoading={isLoading}
+      // setIsLoading={setIsLoading} */}
 
-  //   fetchData();
-  // }, []);
-
-  // return isLoading ? (
-  //   <span>En cours de chargement... </span>
-  // ) : (
-  //   <h2>{data.restaurant.name}</h2>
-  // );
+      <Meals
+        data={data}
+        setData={setData}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+      />
+    </>
+  );
 }
 
 export default App;
