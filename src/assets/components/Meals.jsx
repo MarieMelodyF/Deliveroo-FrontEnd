@@ -21,14 +21,21 @@ const Meals = ({ data, setData, isLoading, setIsLoading }) => {
     <div className="banniere-restau">
       <div className="infoRestau">
         {data.categories.map((categories) => {
-          console.log(categories.name);
-          console.log(categories.name.meals);
+          //   console.log(categories);
+          console.log("cat.meals => ", categories.meals);
           return (
             <div>
               <h2>{categories.name}</h2>{" "}
-              {data.categories.meals.map((meals, index) => {
-                <div></div>;
-              })}
+              {categories.meals > 0
+                ? categories.meals.map((meals, index) => {
+                    // console.log(meals);
+                    return (
+                      <div>
+                        <h2>{meals.title}</h2>
+                      </div>
+                    );
+                  })
+                : null}
             </div>
           );
         })}
