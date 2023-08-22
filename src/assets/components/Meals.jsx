@@ -18,29 +18,46 @@ const Meals = ({ data, setData, isLoading, setIsLoading }) => {
   return isLoading ? (
     <span>En cours de chargement... </span>
   ) : (
-    <div className="banniere-restau">
-      <div className="infoRestau">
-        {data.categories.map((categories) => {
-          //   console.log(categories);
-          console.log("cat.meals => ", categories.meals);
-          return (
-            <div>
-              <h2>{categories.name}</h2>{" "}
-              {categories.meals > 0
-                ? categories.meals.map((meals, index) => {
-                    // console.log(meals);
-                    return (
-                      <div>
-                        <h2>{meals.title}</h2>
-                      </div>
-                    );
-                  })
-                : null}
-            </div>
-          );
-        })}
+    <main>
+      <div className="container inner-main">
+        <section className="col-left">
+          {data.categories.map((category) => {
+            if (category.meals.length !== 0) {
+              return (
+                <section key={category.name}>
+                  <h2>{category.name}</h2>
+                  <div className="meals-container">
+                    {category.meals.map((meal) => {
+                      return (
+                        <article key={meal.id}>
+                          <div>
+                            <h3>{meal.title}</h3>
+                            <p className="meal-description">
+                              {meal.description}
+                            </p>
+                            <span className="meal-price">{meal.price} €</span>
+                            {meal.popular === true && (
+                              <span className="populaire">Populaire</span>
+                            )}
+                          </div>
+
+                          {meal.picture && (
+                            <img src={meal.picture} alt={meal.title} />
+                          )}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </section>
+        <section className="col-right"></section>
       </div>
-    </div>
+    </main>
   );
 };
 

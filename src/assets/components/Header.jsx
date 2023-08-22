@@ -1,4 +1,3 @@
-import App from "../../App";
 const Header = () => {
   return (
     <header>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import axios from "axios";
 import Header from "./assets/components/Header";
 import InfoRestau from "./assets/components/InfosRestau";
 import Meals from "./assets/components/Meals";

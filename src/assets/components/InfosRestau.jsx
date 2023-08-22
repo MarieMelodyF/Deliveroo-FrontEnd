@@ -18,13 +18,13 @@ const InfoRestau = ({ data, setData, isLoading, setIsLoading }) => {
   return isLoading ? (
     <span>En cours de chargement... </span>
   ) : (
-    <div className="banniere-restau">
-      <div className="infoRestau">
-        <h2>{data.restaurant.name}</h2>
-        <p>{data.restaurant.description}</p>
-      </div>
-      <div>
-        <img className="Img-Restau" src={data.restaurant.picture} alt="" />
+    <div className="hero">
+      <div className="container inner-hero">
+        <div className="left-part">
+          <h1>{data.restaurant.name}</h1>
+          <p>{data.restaurant.description}</p>
+        </div>
+        <img src={data.restaurant.picture} alt="" />
       </div>
     </div>
   );
