@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Stratos Deliveroo Web";
+  src: url("./font-css/StratosDeliverooWeb-SemiBold.eot");
+  src: url("./font-css/StratosDeliverooWeb-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./font-css/StratosDeliverooWeb-SemiBold.woff2") format("woff2"),
+    url("./font-css/StratosDeliverooWeb-SemiBold.woff") format("woff"),
+    url("./font-css/StratosDeliverooWeb-SemiBold.ttf") format("truetype"),
+    url("./font-css/StratosDeliverooWeb-SemiBold.svg#StratosDeliverooWeb-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./font-css/IBMPlexSans-Bold.eot");
+  src: url("./font-css/IBMPlexSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./font-css/IBMPlexSans-Bold.woff2") format("woff2"),
+    url("./font-css/IBMPlexSans-Bold.woff") format("woff"),
+    url("./font-css/IBMPlexSans-Bold.ttf") format("truetype"),
+    url("./font-css/IBMPlexSans-Bold.svg#IBMPlexSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./font-css/IBMPlexSans.eot");
+  src: url("./font-css/IBMPlexSans.eot?#iefix") format("embedded-opentype"),
+    url("./font-css/IBMPlexSans.woff2") format("woff2"),
+    url("./font-css/IBMPlexSans.woff") format("woff"),
+    url("./font-css/IBMPlexSans.ttf") format("truetype"),
+    url("./font-css/IBMPlexSans.svg#IBMPlexSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
