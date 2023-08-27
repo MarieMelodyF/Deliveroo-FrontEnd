@@ -7,7 +7,8 @@ import Meals from "./assets/components/Meals";
 function App() {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  // console.log(data.categories);
+  const [cart, setCart] = useState([]);
+  const [shop, setShop] = useState([]);
 
   return (
     <>
@@ -18,16 +19,14 @@ function App() {
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
-      {/* // data={data}
-      // setData={setData}
-      // isLoading={isLoading}
-      // setIsLoading={setIsLoading} */}
 
       <Meals
         data={data}
         setData={setData}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
+        cart={cart}
+        setCart={setCart}
       />
     </>
   );

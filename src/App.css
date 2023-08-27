@@ -6,7 +6,7 @@ body {
   /* font-weight: ; */
 }
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -43,8 +43,7 @@ header {
 header img {
   height: 50px;
   width: 155px;
-  margin-left: 353px;
-  margin-bottom: 10px;
+  margin: 10px 100px;
 }
 
 /* HERO */
@@ -89,9 +88,21 @@ main img {
 }
 
 .col-right {
-  background-color: rgb(250, 215, 215);
-  height: 200px;
+  background-color: white;
+  height: 100%;
   width: 30%;
+  padding: 5px 10px;
+}
+div .cart {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  gap: 30px;
+}
+
+.col-right p {
+  line-height: 20px;
+  margin-top: 10px;
 }
 
 main article {
@@ -140,4 +151,55 @@ article img {
   color: orange;
   font-weight: bold;
   font-size: 15px;
+}
+
+.button-Minus-Plus {
+  background-color: #00ccbc;
+  color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  margin: 10px 10px;
+  font-size: 18px;
+}
+.cart-title {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.cart-Validate {
+  background-color: #00ccbc;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 14px;
+}
+
+/* -------------------------------------------- */
+
+@media (max-width: 1280px) {
+  header {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .Col-right {
+    display: none;
+  }
 }
