@@ -41,9 +41,10 @@ header {
 }
 
 header img {
-  height: 50px;
-  width: 155px;
+  height: 80px;
+  width: 170 px;
   margin: 10px 100px;
+  object-fit: cover;
 }
 
 /* HERO */
