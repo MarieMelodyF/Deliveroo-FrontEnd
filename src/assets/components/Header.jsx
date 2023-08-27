@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <img src="./src/assets/images/Deliveroo-logo.png" alt="logo deliveroo" />
+      <img src="./src/assets/images/logo-teal.svg" alt="logo deliveroo" />
     </header>
   );
 };
