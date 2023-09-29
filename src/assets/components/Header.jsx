@@ -1,7 +1,9 @@
+import logo from "../images/logo-teal.svg";
+
 const Header = () => {
   return (
     <header>
-      <img src="./src/assets/images/logo-teal.svg" alt="logo deliveroo" />
+      <img src={logo} alt="logo deliveroo" />
     </header>
   );
 };
