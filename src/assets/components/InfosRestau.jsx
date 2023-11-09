@@ -5,7 +5,8 @@ const InfoRestau = ({ data, setData, isLoading, setIsLoading }) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://site--deliveroo-backend--r2txk865xjj8.code.run/"
+        // "https://site--deliveroo-backend--r2txk865xjj8.code.run/"
+        "https://site--deliveroo-vinted-back--r2txk865xjj8.code.run/"
       );
       // console.log(response.data);
       setData(response.data);
