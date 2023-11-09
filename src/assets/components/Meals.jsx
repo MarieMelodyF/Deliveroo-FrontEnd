@@ -5,7 +5,9 @@ const Meals = ({ data, setData, isLoading, setIsLoading, cart, setCart }) => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://site--deliveroo-backend--r2txk865xjj8.code.run/"
+        "https://site--deliveroo-vinted-back--r2txk865xjj8.code.run/"
+
+        // "https://site--deliveroo-backend--r2txk865xjj8.code.run/"
       );
       // console.log("res.data.cat=>", response.data.categories);
       setData(response.data);
